@@ -1,21 +1,24 @@
 {
+  "cli": {
+    "appVersionSource": "appJson"
+  },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
+    "production": {
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle"
+      }
     },
-    "preview": {
+    "development": {
       "distribution": "internal",
       "android": {
         "buildType": "apk"
       }
     },
-    "production": {
+    "preview": {
+      "distribution": "internal",
       "android": {
-        "buildType": "app-bundle"
-      },
-      "ios": {
-        "buildConfiguration": "Release"
+        "buildType": "apk"
       }
     }
   }
