@@ -1,22 +1,35 @@
 {
-  "cli": {
-    "version": ">= 3.0.0"
-  },
   "build": {
-    "production": {
-      "android": {
-        "image": "ubuntu-22.04-android-32-ndk-r25c",
-        "buildType": "app-bundle",
-        "gradleCommand": ":app:bundleRelease"
-      },
-      "env": {
-        "EXPO_NO_DEV_SERVER": "true"
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
       }
     },
-    "development": {
+    "preview": {
+      "distribution": "internal",
       "android": {
-        "image": "ubuntu-22.04-android-32-ndk-r25c",
         "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "buildConfiguration": "Release"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "ascAppId": "1234567890",
+        "fastlane": {
+          "serviceAccountKeyPath": "./google-play-key.json"
+        }
       }
     }
   }
