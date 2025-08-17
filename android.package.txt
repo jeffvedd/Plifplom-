@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "MeuApp",
+    "slug": "meu-app",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.jefferson.plifplom"
+    }
+  }
+}
