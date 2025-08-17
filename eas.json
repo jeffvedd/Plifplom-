@@ -1,26 +1,20 @@
-
 {
   "cli": {
-    "version": ">= 2.0.0"
+    "version": ">= 2.0.0",
+    "appVersionSource": "remote"
   },
   "build": {
     "production": {
       "android": {
         "buildType": "app-bundle"
       },
-      "ios": {
-        "resourceClass": "medium"
-      }
+      "autoIncrement": true
     },
     "development": {
       "developmentClient": true,
       "distribution": "internal",
       "android": {
         "buildType": "apk"
-      },
-      "ios": {
-        "buildConfiguration": "Debug",
-        "resourceClass": "medium"
       }
     }
   }
