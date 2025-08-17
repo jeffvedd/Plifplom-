@@ -11,15 +11,18 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.jeffvedd.plifplom"
+      "supportsTablet": true
     },
     "android": {
       "package": "com.jeffvedd.plifplom",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -27,9 +30,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "cli": {
-      "appVersionSource": "appJson"
     }
   }
 }
