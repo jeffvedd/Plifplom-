@@ -4,7 +4,7 @@
     "appVersionSource": "remote"
   },
   "build": {
-    "development": {
+    "production": {
       "android": {
         "buildType": "app-bundle"
       },
