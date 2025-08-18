@@ -1,14 +1,21 @@
 {
-  "expo": {
-    "name": "Plifplom ",
-    "slug": "Plifplom",
-    "version": "1.0.0",
-    "platforms": ["ios", "android"],
-    "ios": {
-      "bundleIdentifier": "com.telstech.app"
-    },
-    "android": {
-      "package": "com.telstech.app"
+  "name": "Plifplom",
+  "slug": "Plifplom",
+  "version": "1.0.0",
+  "platforms": [
+    "ios",
+    "android"
+  ],
+  "ios": {
+    "bundleIdentifier": "com.telstech.app"
+  },
+  "android": {
+    "package": "com.telstech.app"
+  },
+  "sdkVersion": "53.0.0",
+  "extra": {
+    "eas": {
+      "projectId": "caa115b5-08cb-45b4-b36c-8f3dee53c006"
     }
   }
 }
