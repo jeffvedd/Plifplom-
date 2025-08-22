@@ -50,7 +50,7 @@ function TabBar({ selected, setSelected }) {
     { key: 'profile', label: 'Perfil', icon: 'person' },
   ];
   return (
-    <View style={[styles.tabBar, { bottom: bottom + 10 }]}>
+    <View style={[styles.tabBar, { bottom: bottom   }]}>
       <BlurView intensity={80} tint="light" style={StyleSheet.absoluteFill}>
         <View style={styles.tabBarContent}>
           {tabs.map((tab) => (
